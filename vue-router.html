@@ -7,11 +7,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
+<link rel="stylesheet" href="./css/vue-router.css">
 
 <body>
     <div id='app'>
-
+        <div id='navside'>
+            <ul>
+                <li>
+                    <router-link to='/non'>首页</router-link>
+                </li>
+                <li>
+                    <router-link to='/jqu'>Jquery</router-link>
+                </li>
+                <li>
+                    <router-link to='/boot'>Bootstorp</router-link>
+                </li>
+                <li>
+                    <router-link to='/esay'>Esay-Ui</router-link>
+                </li>
+                <li>
+                    <router-link to='/vue'>Vue-Js</router-link>
+                </li>
+            </ul>
+        </div>
+        <div id='content'>
+            <router-view></router-view>
+        </div>
     </div>
+    <script src='./js/vue-router.js'></script>
 </body>
 
 </html>
